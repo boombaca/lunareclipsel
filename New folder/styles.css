@@ -13,15 +13,15 @@ body {
 .moon {
   margin-top: 60px;
   margin-left: calc(50% - 200px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 
 .shadow {
   top: 225px;
   left: calc(100vw + 200px);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   border-radius: 50%;
   animation: show 10s infinite;
