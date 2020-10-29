@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sky {
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.moon {
+  margin-top: 60px;
+  margin-left: calc(50% - 200px);
+  width: 200px;
+  height: 200px;
+}
+
+.shadow {
+  top: 225px;
+  left: calc(100vw + 200px);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  animation: show 10s infinite;
+  animation-direction: cubic-bezier(0,.38,1,.54);
+}
+
+@keyframes show {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  10% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  45%, 55% {
+    top: 60px;
+    left: calc(50% - 200px);
+    background-color: rgba(100, 0, 0, .6);
+    -webkit-box-shadow: 0px 1px 17px 0px rgba(100, 0, 0, .6);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(100, 0, 0, .6);
+    box-shadow: 0px 1px 17px 0px rgba(100, 0, 0, .6);
+  }
+
+  80% {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    top: -200px;
+    left: calc(-100vw - 200px);
+    background: rgba(0, 0, 0, 0);
+  }
+}
